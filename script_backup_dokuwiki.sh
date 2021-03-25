@@ -2,15 +2,16 @@
 
 #Script de sauvegarde de dokuwiki
 
-#Déclaration de la variable qui indique y=année m=le mois d=le jour H=heure M=minites.
+#Déclaration de la variable qui indique y=année m=le mois d=le jour H=heure M=minutes.
 d=`date +%Y%m%d%H%M`
 
-#L'option -a préserver autant que possible la structure et les attributs du fichier original lors de la copie. Cette option est équivalente à -dpPR
+#L'option -a préserve autant que possible la structure et les attributs du fichier original lors de la copie.
 cp -a /var/www/html/conf/ /var/www/html/data/ /home/daniel/BACKUPS/
 
 cd /home/daniel/BACKUPS/
 
-#Crée une archive compréssée en bzip2 il compresse mieux que gzip mais est plus long.
+#Crée une archive compressée avec bzip2.
+#bzip2 compresse mieux que gzip mais il est plus long.
 tar -jcvf dokups$d.tar.bz2 conf/ data/
 
 #Effacement récursif des deux dossier

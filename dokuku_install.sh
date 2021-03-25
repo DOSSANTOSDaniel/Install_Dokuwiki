@@ -4,7 +4,7 @@
 #================================================================#
 # DESCRIPTION: 
 # Ce script va servir a installer Dokuwiki avec un minimum 
-# d'intéractions.
+# d’interactions.
 #----------------------------------------------------------------#
 # AUTEURS: Daniel DOS SANTOS < danielitto91@gmail.com >
 #----------------------------------------------------------------#
@@ -48,10 +48,6 @@ ip a
 echo -e "\n"
 echo "Attention c'est à vous maintenant ! allez sur: http://IP/dokuwiki/install.php"
 echo -e "\n"
-read -p "appuyez sur entrée pour terminer l'installation! quand c'est fini seulement!!!!!!!"
+read -p "Appuyez sur entrée pour terminer l'installation! seulement quand l'installation sera fini !"
 
 rm /var/www/html/dokuwiki/install.php
-
-
-
-
